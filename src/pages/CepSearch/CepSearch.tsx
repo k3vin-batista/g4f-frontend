@@ -11,11 +11,6 @@ export function CepSearch() {
   return (
     <div className="page">
       <div className="container">
-        <header className="pageHeader">
-          <h1 className="pageTitle">Prova Técnica Frontend</h1>
-          <p className="pageSubtitle">Consulta de endereço por CEP (ViaCEP)</p>
-        </header>
-
         <CepForm
           cepInput={cepInput}
           isLoading={state === 'loading'}

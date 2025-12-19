@@ -1,7 +1,7 @@
-import { CepSearch } from './pages/CepSearch';
+import { AppRoutes } from './routes/AppRoutes';
 
 function App() {
-  return <CepSearch />;
+  return <AppRoutes />;
 }
 
 export default App;
