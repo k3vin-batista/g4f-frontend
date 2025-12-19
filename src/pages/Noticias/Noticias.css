@@ -1,0 +1,104 @@
+.noticiasPage {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+header h1 {
+  margin-bottom: 12px;
+}
+
+.noticiaForm {
+  background: #121625;
+  border: 1px solid #1f2741;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+
+.noticiaForm h2 {
+  margin-top: 0;
+}
+
+.noticiaForm input,
+.noticiaForm textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 6px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  border: 1px solid #2a3353;
+  background: #0f1320;
+  color: #fff;
+}
+
+.formActions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.formActions button {
+  padding: 10px 14px;
+}
+
+.formActions .secondary {
+  background: transparent;
+  border: 1px solid #2a3353;
+}
+
+.noticiasGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 12px;
+}
+
+.noticiaCard {
+  background: #121625;
+  border: 1px solid #1f2741;
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.noticiaCard h3 {
+  margin-top: 0;
+}
+
+.cardActions {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+  flex-wrap: wrap;
+}
+
+.cardActions .danger {
+  background: #5b2128;
+}
+
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.empty {
+  color: #b8c1d6;
+}
+
+.error {
+  color: #ff6b6b;
+  margin-bottom: 12px;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+  .noticiasGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .pagination {
+    justify-content: center;
+    gap: 20px;
+  }
+}
