@@ -1,0 +1,221 @@
+.page {
+    min-height: 100vh;
+    padding: 24px 16px;
+    background: #0b0d12;
+    color: #e9eef7;
+}
+
+.container {
+    width: 100%;
+    max-width: 880px;
+    margin: 0 auto;
+}
+
+.pageHeader {
+    margin-bottom: 16px;
+}
+
+.pageTitle {
+    font-size: 24px;
+    margin: 0 0 6px 0;
+    letter-spacing: 0.2px;
+}
+
+.pageSubtitle {
+    margin: 0;
+    color: #b8c1d6;
+    font-size: 14px;
+}
+
+.cepCard {
+    background: #121625;
+    border: 1px solid #1f2741;
+    border-radius: 14px;
+    padding: 16px;
+    margin-top: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+}
+
+.cepHeader {
+    margin-bottom: 12px;
+}
+
+.cepTitle {
+    margin: 0 0 6px 0;
+    font-size: 18px;
+}
+
+.cepSubtitle {
+    margin: 0;
+    color: #b8c1d6;
+    font-size: 13px;
+}
+
+.cepFormRow {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.cepLabel {
+    font-size: 12px;
+    color: #b8c1d6;
+}
+
+.cepInput {
+    border-radius: 10px;
+    border: 1px solid #2a3353;
+    background: #0f1320;
+    color: #e9eef7;
+    padding: 12px 12px;
+    font-size: 14px;
+    outline: none;
+}
+
+.cepInput:focus {
+    border-color: #4a68ff;
+    box-shadow: 0 0 0 3px rgba(74, 104, 255, 0.2);
+}
+
+.cepActions {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.btnPrimary,
+.btnSecondary {
+    border-radius: 10px;
+    border: 1px solid transparent;
+    padding: 10px 12px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.btnPrimary {
+    background: #4a68ff;
+    color: #ffffff;
+}
+
+.btnPrimary:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.btnSecondary {
+    background: transparent;
+    color: #e9eef7;
+    border-color: #2a3353;
+}
+
+.btnSecondary:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.cepHint {
+    margin: 10px 0 0 0;
+    color: #b8c1d6;
+    font-size: 12px;
+}
+
+.cepFeedback {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-top: 12px;
+    padding: 14px 16px;
+    background: #111a2c;
+    border: 1px solid #203057;
+    border-radius: 14px;
+}
+
+.cepFeedbackError {
+    background: #2a1417;
+    border-color: #5b2128;
+}
+
+.cepFeedbackTitle {
+    margin: 0;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.cepFeedbackText {
+    margin: 4px 0 0 0;
+    font-size: 13px;
+    color: #c9d2ea;
+}
+
+.spinner {
+    width: 18px;
+    height: 18px;
+    border-radius: 999px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-top-color: rgba(255, 255, 255, 0.9);
+    animation: spin 0.7s linear infinite;
+    margin-top: 2px;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.cepSectionTitle {
+    margin: 0 0 12px 0;
+    font-size: 16px;
+}
+
+.resultGrid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+.resultItem {
+    border: 1px solid #1f2741;
+    border-radius: 12px;
+    padding: 12px;
+    background: #0f1320;
+}
+
+.resultLabel {
+    display: block;
+    font-size: 12px;
+    color: #b8c1d6;
+    margin-bottom: 4px;
+}
+
+.resultValue {
+    display: block;
+    font-size: 14px;
+    color: #e9eef7;
+    word-break: break-word;
+}
+
+.pageFooter {
+    margin-top: 16px;
+    color: #b8c1d6;
+    font-size: 12px;
+}
+
+.pageFooterText {
+    margin: 0;
+}
+
+/* Responsivo: no desktop, resultado em grid */
+@media (min-width: 720px) {
+    .cepFormRow {
+        gap: 12px;
+    }
+
+    .resultGrid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .cepCard {
+        padding: 18px;
+    }
+}
