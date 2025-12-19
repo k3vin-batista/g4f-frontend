@@ -1,5 +1,7 @@
+import { CepSearch } from './pages/CepSearch';
+
 function App() {
-  return <h1>Prova Técnica Frontend</h1>;
+  return <CepSearch />;
 }
 
 export default App;
