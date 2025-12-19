@@ -1,0 +1,17 @@
+# Dependencies
+node_modules
+
+# Build output
+dist
+build
+*.log*
+
+# Temporary files and caches
+.eslintcache
+.DS_Store
+dist-ssr
+/coverage
+
+# Environment variables
+.env
+.env*.local
